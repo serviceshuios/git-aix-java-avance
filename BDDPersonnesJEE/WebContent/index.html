@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="card card-inverse card-primary" >
+			<div class="card-header">GESTION DES PERSONNES</div>
+			<div class="card-block">
+				<h4 class="card-title">Ajouter une personne</h4>
+				<form action="PersonneController" method="post">
+					<div class="form-group">
+						<label for="nom">Nom</label> <input type="text"
+							class="form-control" id="nom" name="nom"
+							placeholder="Entrer le nom">
+					</div>
+					<div class="form-group">
+						<label for="prenom">Prenom</label> <input type="text"
+							class="form-control" id="prenom" name="prenom"
+							placeholder="Entrer le prenom">
+					</div>
+					<div class="form-group">
+						<label for="prenom">Age</label> <input type="number"
+							class="form-control" id="age" name="age"
+							placeholder="Entrer votre age">
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
