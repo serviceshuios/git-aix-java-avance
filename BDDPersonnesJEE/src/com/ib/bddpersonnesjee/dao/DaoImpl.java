@@ -134,6 +134,7 @@ public class DaoImpl implements Idao {
 				p.setId(rs.getInt("id"));
 				p.setNom(rs.getString("nom"));
 				p.setPrenom(rs.getString("prenom"));
+				p.setAge(rs.getInt("age"));
 		cn.close();
 				
 		} catch (Exception e) {
