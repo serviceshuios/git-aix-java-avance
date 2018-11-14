@@ -19,7 +19,8 @@
             <!-- Spécifie le 'dialecte' SQL utilisé pour communiquer avec la BDD -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
             <!-- Indique a Hibernate de (re-)créer la BDD au lancement de l'application -->
-            <property name="hibernate.hbm2ddl.auto" value="create" />
+            <!-- ligne à commenter dès que les tables de la base de donnée sont créées -->
+<!--             <property name="hibernate.hbm2ddl.auto" value="create" /> -->
         </properties>
     </persistence-unit>
 
