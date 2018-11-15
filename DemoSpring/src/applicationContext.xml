@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+	<!-- création d'un bean développeur -->
+	<!-- 
+		Developpeur dev1 = new Developpeur();
+		dev1.setNom("Toto");
+		dev1.setAnneesExperience(25);
+	 -->
+	<bean id="dev1" class="com.ib.demospring.metier.Developpeur">
+		<property name="nom" value="Toto"></property>
+		<property name="anneesExperience">
+			<value>25</value>
+		</property>
+	</bean>
+	<!-- 
+		Developpeur dev2 = new Developpeur(); -->
+		
+	<bean id="dev2" class="com.ib.demospring.metier.Developpeur"/>
+	
+	<!-- societeDevLogiciel -->
+	<bean id="societe" class="com.ib.demospring.metier.SocieteDevLogiciel">
+		<property name="developpeur" ref="dev1"></property>
+		<property name="chefDeveloppeur" ref="dev2"></property>
+	</bean>
+</beans>
